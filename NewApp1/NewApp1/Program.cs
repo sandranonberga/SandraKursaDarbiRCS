@@ -11,7 +11,8 @@ namespace NewApp1
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Ludzu, ievadiet savu vaardu:");
+			//hfuefhuioefhiuoewhf
+			Console.WriteLine("Ludzu, ievadiet savu vaardu:");
             string vards = Console.ReadLine();
 
             Console.WriteLine("Ludzu, ievadiet kaads gads ir tagad:");
