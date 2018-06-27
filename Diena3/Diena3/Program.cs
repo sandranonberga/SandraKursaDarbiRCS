@@ -66,9 +66,21 @@ namespace Diena3
 		
 		static void Main(string[] args)
 		{
+			Matematika objekts1 = new Matematika(); //definē objektu no klases
+			///Matematika objekts2 = new Matematika();
+			objekts1.Matem(); //ar jauno objektu izsaucu metodi, kur jau visas darbības definētas
+			//objekts2.Atnem(4,3);
+
+			/*
 			Class1 objekts1 = new Class1(); //šeit izsauc jaunu objektu no klases Class1
-			int vertiba = objekts1.Saskaitit(5,5); //izsauc funkciju no citas klases caur objektu
-			objekts1.Teksts();
+			Class1 objekts2 = new Class1();
+			int vertiba = objekts1.Saskaitit(5,3); //izsauc funkciju no citas klases caur objektu
+			objekts1.globals = 5 + 5;
+
+			Console.WriteLine(objekts1.globals);
+			Console.WriteLine(objekts2.globals); //paņems vērtību no Class1
+			Console.WriteLine(vertiba);
+			*/
 			/*
 			string vards, uzvards; //deklarē mainīgos
 			Console.WriteLine("Luudzu ievadiet vaardu:");
@@ -81,10 +93,13 @@ namespace Diena3
 			Console.ReadLine();
 		}
 
+
+		/*
 		static void IzvaditSveicienu(string a, string b) //izveido divus parametrus
 		{
 			Console.WriteLine("Sveiki, " + a + " " + b + ", prieks tevi redzeet!");
 		}
+		*/
 		
 	}
 }

@@ -14,15 +14,16 @@ namespace Diena3
 		public int Saskaitit(int a, int b) //public - norāda, ka funkcijai varēs piekļūt ārpus šīs klases
 		{
 			int rezultats = a + b;
-			globals = 6;
+			Console.WriteLine(globals);
+			globals = globals + 3;
 			lokalsklasei = 3;
+
 			//Teksts();
 			return rezultats; //lai būtu return, nedrīkst būt void, jābūt int. Return ir pēdējā lieta, ko izdara funkcija
 		}
 
 		private void Teksts() //private - šai funkcijai varēs piekļūt tikai no šīs klases
 		{
-			globals = 8;
 			Console.WriteLine("hfudishfods");
 		}
 	}
