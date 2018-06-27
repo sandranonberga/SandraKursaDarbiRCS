@@ -8,6 +8,37 @@ namespace Diena3
 {
 	class Program
 	{
+		
+		/*
+		static void Main(string[] args)
+		{
+			Degviela();
+
+			Console.ReadLine();
+		}
+
+		static void Degviela()
+		{
+			Console.WriteLine("Ievadiet degvielas cenu:");
+			string cena = Console.ReadLine();
+			double c = Convert.ToDouble(cena);
+
+			Console.WriteLine("Ievadiet degvielas pateerinju litros uz 100km:");
+			string paterins = Console.ReadLine();
+			double p = Convert.ToDouble(paterins);
+
+			Console.WriteLine("Ievadiet nobraukto kilometru skaitu:");
+			string nobraukums = Console.ReadLine();
+			double n = Convert.ToDouble(nobraukums);
+
+			double kopejacena = (p / 100) * n * c;
+
+			Console.WriteLine("Celsh izmaksaas " + kopejacena + " EUR!");
+		}
+		*/
+
+
+		/*
 		static void Main(string[] args)
 		{
 			RinkaLinija();
@@ -19,17 +50,17 @@ namespace Diena3
 		{
 			Console.WriteLine("Luudzu ievadiet rinkja liinijas radiusa veertiibu:");
 			string radi = Console.ReadLine();
-			int r = Convert.ToInt16(radi);
+			double r = Convert.ToDouble(radi);
 
 			double pi = 3.14;
-			int piNew = Convert.ToInt16(pi);
-			int diametrs = r * 2;
-			int rlgarums = 2 * piNew * r;
+			double diametrs = r * 2;
+			double rlgarums = 2 * pi * r;
 
 			Console.WriteLine("Rinkja diametrs ir " + diametrs);
-			Console.WriteLine("Rinkja liinijas radiuss ir " + rlgarums);
+			Console.WriteLine("Rinkja liinijas garums ir " + rlgarums);
 
 		}
+		*/
 
 
 
