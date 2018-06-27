@@ -8,7 +8,6 @@ namespace Diena3
 {
 	class Program
 	{
-		
 		/*
 		static void Main(string[] args)
 		{
@@ -64,9 +63,13 @@ namespace Diena3
 
 
 
-		/*
+		
 		static void Main(string[] args)
 		{
+			Class1 objekts1 = new Class1(); //šeit izsauc jaunu objektu no klases Class1
+			int vertiba = objekts1.Saskaitit(5,5); //izsauc funkciju no citas klases caur objektu
+			objekts1.Teksts();
+			/*
 			string vards, uzvards; //deklarē mainīgos
 			Console.WriteLine("Luudzu ievadiet vaardu:");
 			vards = Console.ReadLine();
@@ -74,7 +77,7 @@ namespace Diena3
 			uzvards = Console.ReadLine();
 
 			IzvaditSveicienu(vards, uzvards);
-
+			*/
 			Console.ReadLine();
 		}
 
@@ -82,6 +85,6 @@ namespace Diena3
 		{
 			Console.WriteLine("Sveiki, " + a + " " + b + ", prieks tevi redzeet!");
 		}
-		*/
+		
 	}
 }
