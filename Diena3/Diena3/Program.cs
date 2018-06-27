@@ -66,10 +66,15 @@ namespace Diena3
 		
 		static void Main(string[] args)
 		{
+			RinkaLinija objekts = new RinkaLinija();
+			objekts.rinkis();
+
+			/*
 			Matematika objekts1 = new Matematika(); //definē objektu no klases
 			///Matematika objekts2 = new Matematika();
 			objekts1.Matem(); //ar jauno objektu izsaucu metodi, kur jau visas darbības definētas
 			//objekts2.Atnem(4,3);
+			*/
 
 			/*
 			Class1 objekts1 = new Class1(); //šeit izsauc jaunu objektu no klases Class1
