@@ -9,7 +9,7 @@ namespace Diena4
 	class JaunaKlase1
 	{
 
-		public void Rezultats()
+		public void Rezultats() //izsauc private funkcijas public funkcijā, lai tās varētu izvadīt
 		{
 			Izvade();
 			Saskaitisana();
