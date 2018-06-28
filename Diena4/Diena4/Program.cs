@@ -10,6 +10,10 @@ namespace Diena4
 	{
 		static void Main(string[] args)
 		{
+			JaunaKlase1 objekts = new JaunaKlase1();
+			objekts.Rezultats();
+
+			Console.ReadLine();
 		}
 	}
 }
