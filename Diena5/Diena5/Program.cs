@@ -10,8 +10,26 @@ namespace Diena5
 	{
 		static void Main(string[] args)
 		{
-			pd1_1 objekts = new pd1_1();
-			objekts.Funkcijas();
+			Console.WriteLine("Izveelieties no kuras klases izsaukt funkcijas - 1 vai 2:");
+			string izv = Console.ReadLine();
+
+			if (izv == "1")
+			{
+				pd1_1 objekts = new pd1_1();
+				objekts.Funkcijas();
+			}
+			else
+			{ 
+				if (izv == "2")
+				{
+					pd1_2 objekts2 = new pd1_2();
+					objekts2.izsauktfunkcijas();
+				}
+				else
+				{
+					Console.WriteLine("Nevar izsaukt klasi :(");
+				}
+			}
 
 			Console.ReadLine();
 		}

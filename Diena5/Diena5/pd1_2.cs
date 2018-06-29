@@ -9,7 +9,10 @@ namespace Diena5
 	class pd1_2
 	{
 
-
+		public void izsauktfunkcijas()
+		{
+			funkcizvele();
+		}
 
 		private void matematika()
 		{
@@ -18,12 +21,12 @@ namespace Diena5
 			double a = Convert.ToDouble(pirmaisskaitlis);
 			Console.WriteLine("Ierakstiet otro skaitli:");
 			string otraisskaitlis = Console.ReadLine();
-			double b = Convert.ToDouble(pirmaisskaitlis);
+			double b = Convert.ToDouble(otraisskaitlis);
 			Console.WriteLine("Izveelieties darbiibu:");
-			Console.WriteLine("1 - saskaitiishana:");
-			Console.WriteLine("2 - atnjemshana:");
-			Console.WriteLine("3 - reizinaashana:");
-			Console.WriteLine("4 - daliishana:");
+			Console.WriteLine("1 - saskaitiishana");
+			Console.WriteLine("2 - atnjemshana");
+			Console.WriteLine("3 - reizinaashana");
+			Console.WriteLine("4 - daliishana");
 			string izvele = Console.ReadLine();
 
 			if (izvele == "1")
@@ -101,6 +104,91 @@ namespace Diena5
 
 		}
 
+
+		private void LielaksMazaks()
+		{
+			Console.WriteLine("Ievadiet pirmo skaitli");
+			string pirmaissk = Console.ReadLine();
+			double a = Convert.ToDouble(pirmaissk);
+			Console.WriteLine("Ievadiet otro skaitli");
+			string otraissk = Console.ReadLine();
+			double b = Convert.ToDouble(otraissk);
+
+			if (a > b)
+			{
+				Console.WriteLine(a);
+			}
+			else
+			{
+				if (a == b)
+				{
+					Console.WriteLine("Skaitlji ir vienaadi");
+				}
+				else
+				{
+					Console.WriteLine(b);
+				}	
+			}
+		}
+
+		private void kaapinaasana()
+		{
+			Console.WriteLine("Ievadiet veselu skaitli:");
+			string sk = Console.ReadLine();
+			int a = Convert.ToInt16(sk);
+
+			Console.WriteLine("Ievadiet, kaadaa pakaapee skaitli kaapinaat - 2 vai 3");
+			string izvele = Console.ReadLine();
+			int pakape = Convert.ToInt16(izvele);
+
+			if (pakape == 2)
+			{
+				int rezultats1 = a * a;
+				Console.WriteLine("Rezultaats ir " + rezultats1);
+			}
+			else
+			{
+				if (pakape == 3)
+				{
+					int rezultats2 = a * a * a;
+					Console.WriteLine("Rezultaats ir " + rezultats2);
+				}
+				else
+				{
+					Console.WriteLine("Es neprotu kaapinaat :(");
+				}
+			}
+		}
+
+		private void funkcizvele()
+		{
+			Console.WriteLine("Izveelieties kaadu no uzdevumiem:");
+			Console.WriteLine("1 - matemaatika");
+			Console.WriteLine("2 - atziime");
+			Console.WriteLine("3 - skaitlju kaapinaashana");
+			Console.WriteLine("4 - lielaakais skaitlis");
+			string izvele = Console.ReadLine();
+
+			switch (izvele)
+			{
+				case "1":
+					matematika();
+					break;
+				case "2":
+					LetterGrade();
+					break;
+				case "3":
+					kaapinaasana();
+					break;
+				case "4":
+					LielaksMazaks();
+					break;
+				default:
+					Console.WriteLine("Funkcija nav atrasta :(");
+					break;
+			}
+			
+		}
 
 	}
 }
