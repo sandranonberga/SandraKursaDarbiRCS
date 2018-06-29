@@ -8,6 +8,126 @@ namespace Diena4
 {
 	class Zarosanas
 	{
+		public void ArIf(string ievade)
+		{
+			int skaitlis = Convert.ToInt16(ievade);
+
+			if (skaitlis > 10 || skaitlis < 0) // || - vai, && - un
+			{
+				Console.WriteLine("Kludaina ievade");
+			}
+			else
+			{
+				if (skaitlis == 1)
+				{
+					Console.WriteLine("Skaitlis ir viens");
+				}
+				else
+				{
+					if (skaitlis == 2)
+					{
+						Console.WriteLine("Skaitlis ir divi");
+					}
+					else
+					{
+						if (skaitlis == 3)
+						{
+							Console.WriteLine("Skaitlis ir triis");
+						}
+						else
+						{
+							if (skaitlis == 4)
+							{
+								Console.WriteLine("Skaitlis ir chetri");
+							}
+							else
+							{
+								if (skaitlis == 5)
+								{
+									Console.WriteLine("Skaitlis ir pieci");
+								}
+								else
+								{
+									if (skaitlis == 6)
+									{
+										Console.WriteLine("Skaitlis ir seshi");
+									}
+									else
+									{
+										if (skaitlis == 7)
+										{
+											Console.WriteLine("Skaitlis ir septinji");
+										}
+										else
+										{
+											if (skaitlis == 8)
+											{
+												Console.WriteLine("Skaitlis ir astonji");
+											}
+											else
+											{
+												if (skaitlis == 9)
+												{
+													Console.WriteLine("Skaitlis ir devinji");
+												}
+												else
+												{
+													if (skaitlis == 10)
+													{
+														Console.WriteLine("Skaitlis ir desmit");
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		public void ArCase(string ievade2)
+		{
+			switch (ievade2) //switch vērtībā jāliek 
+			{
+				case "1":
+					Console.WriteLine("Skaitlis ir viens");
+					break;
+				case "2":
+					Console.WriteLine("Skaitlis ir divi");
+					break;
+				case "3":
+					Console.WriteLine("Skaitlis ir triis");
+					break;
+				case "4":
+					Console.WriteLine("Skaitlis ir chetri");
+					break;
+				case "5":
+					Console.WriteLine("Skaitlis ir pieci");
+					break;
+				case "6":
+					Console.WriteLine("Skaitlis ir seshi");
+					break;
+				case "7":
+					Console.WriteLine("Skaitlis ir septinji");
+					break;
+				case "8":
+					Console.WriteLine("Skaitlis ir astonji");
+					break;
+				case "9":
+					Console.WriteLine("Skaitlis ir devinji");
+					break;
+				case "10":
+					Console.WriteLine("Skaitlis ir desmit");
+					break;
+				default:
+					Console.WriteLine("Kludaina ievade");
+					break;
+			}
+		}
+
 
 		/*public void LielaksVaiMazaks()
 		{
@@ -38,6 +158,7 @@ namespace Diena4
 		}
 		*/
 
+		/*
 		public void Funkcijas()
 		{
 			Console.WriteLine("Izveelieties funkciju (1 vai 2):");
@@ -187,5 +308,6 @@ namespace Diena4
 					break;
 			}
 		}
+		*/
 	}
 }

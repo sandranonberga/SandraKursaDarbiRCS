@@ -10,8 +10,16 @@ namespace Diena4
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine("Ievadiet skaitli no 1 liidz 10:");
 			Zarosanas objekts = new Zarosanas();
-			objekts.Funkcijas();
+			string input = Console.ReadLine();
+
+			objekts.ArIf(input);
+			objekts.ArCase(input); 
+			/*šeit var rakstīt iekšā input, 
+			 * jo main funkcijā ir definēts input, ko nolasa. 
+			 * tas nav funkcijās atsevišķi jādara
+			 */
 
 			/*
 			Zarosanas jaunsobjekts = new Zarosanas();
