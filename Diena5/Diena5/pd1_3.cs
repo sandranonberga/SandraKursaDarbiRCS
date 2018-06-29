@@ -8,6 +8,27 @@ namespace Diena5
 {
 	class pd1_3
 	{
+		public void izsaukt()
+		{
+			Console.WriteLine("Izveelieties kaadu no uzdevumiem:");
+			Console.WriteLine("1 - kalendars");
+			Console.WriteLine("2 - trijsturis");
+			Console.WriteLine("3 - pelnja vai zaudejums");
+			string izvele = Console.ReadLine();
+
+			switch (izvele)
+			{
+				case "1":
+					kalendars();
+					break;
+				case "2":
+					trijsturis();
+					break;
+				case "3":
+					profits();
+					break;
+			}
+		}
 
 		private void kalendars()
 		{
@@ -60,7 +81,36 @@ namespace Diena5
 			}
 			else
 			{
-				Console.WriteLine("Trijsturis nesanaaks");
+				Console.WriteLine("Nebuus!");
+			}
+		}
+
+		private void profits()
+		{
+			Console.WriteLine("Ievadiet iepirkuma cenu:");
+			string iepirkumacena = Console.ReadLine();
+			double iepirkums = Convert.ToDouble(iepirkumacena);
+			Console.WriteLine("Ievadiet paardosanas cenu:");
+			string pardosanascena = Console.ReadLine();
+			double pardosana = Convert.ToDouble(pardosanascena);
+
+			double pelna = pardosana - iepirkums;
+			double zaudejumi = iepirkums - pardosana;
+
+			if (iepirkums < pardosana)
+			{
+				Console.WriteLine("Pelnja: " + pelna);
+			}
+			else
+			{
+				if (iepirkums == pardosana)
+				{
+					Console.WriteLine("Nebus pelnja");
+				}
+				else
+				{
+					Console.WriteLine("Zaudejumi: " + zaudejumi);
+				}
 			}
 		}
 
