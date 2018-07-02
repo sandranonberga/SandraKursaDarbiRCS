@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1E4620F0-0313-45C5-A964-34D0116C93AE}</ProjectGuid>
+    <ProjectGuid>{70F12E5F-9463-4FFC-8EB4-3D8BE9D0E947}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Diena5</RootNamespace>
-    <AssemblyName>Diena5</AssemblyName>
+    <RootNamespace>Diena6</RootNamespace>
+    <AssemblyName>Diena6</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,11 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pd1_1.cs" />
-    <Compile Include="pd1_2.cs" />
-    <Compile Include="pd1_3.cs" />
+    <Compile Include="Cikli.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repeat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
