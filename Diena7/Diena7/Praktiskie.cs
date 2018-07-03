@@ -34,7 +34,9 @@ namespace Diena7
 
 			for (int i = 0; i < 5; i++)
 			{
-				
+				int reizes = 5 - i;
+				Console.WriteLine("Palika " + reizes + " meeginaajumi");
+
 				string input = Console.ReadLine();
 				int skaitlis = Convert.ToInt16(input);
 
@@ -56,6 +58,62 @@ namespace Diena7
 				}
 
 			}
+
+		}
+
+		public void Tresais()
+		{
+			int reizinajums = 0;
+			int i = 0;
+			
+
+			while (i <= 9)
+			{
+				reizinajums = i * 2 + reizinajums;
+				i++;
+			}
+
+			Console.WriteLine("Rezultaats ir " + reizinajums);
+		}
+
+		public void Ceturtais()
+		{
+			//Likt cilvekam meginat uzminet skaitli. Ja skaitlis sakrit ar 11, tad pareizi
+			//Max meginajumu skaits - 5.
+			//Ja 5 reizes nesanak, tad izvadit pazinojumu.
+
+			Console.WriteLine("Luudzu ievadiet skaitli:");
+		
+			int i = 0;
+
+			do
+			{
+				string input = Console.ReadLine();
+				int skaitlis = Convert.ToInt16(input);
+
+				i++;
+
+				if (skaitlis == 11)
+				{
+					Console.WriteLine("Yisss, skaitlis ir uzmineets!");
+					break;
+				}
+				else
+				{
+					if (i == 5)
+					{
+						Console.WriteLine(":(");
+					}
+					else
+					{
+						Console.WriteLine("Skaitlis ir nepareizs, meegjini veel");
+					}
+				}
+
+			}
+			while (i < 5);
+
+			
 
 		}
 
