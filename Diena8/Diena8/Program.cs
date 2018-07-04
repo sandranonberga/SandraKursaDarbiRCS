@@ -12,9 +12,26 @@ namespace Diena8
 		{
 			//Switch un case izveelne
 			CikluUzdevumi obj = new CikluUzdevumi();
-			Console.WriteLine("Izvelieties uzdevumu - 1");
+			Masivs array = new Masivs();
+			Console.WriteLine("Izvelieties uzdevumu - 1 vai 2");
 			string izvelne = Console.ReadLine();
 
+			switch (izvelne)
+			{
+				case "1":
+					obj.Zvaigznite();
+					break;
+				case "2":
+					array.IzvaditMasivu();
+					break;
+				case "0":
+					break;
+				default:
+					Console.WriteLine("Nepareiza ievade");
+					break;
+			}
+
+			/*
 			while (izvelne != "0")
 			{
 				Console.WriteLine("Izvelieties uzdevumu - 1");
@@ -25,6 +42,9 @@ namespace Diena8
 					case "1":
 						obj.Zvaigznite();
 						break;
+					case "2":
+						array.IzvaditMasivu();
+						break;
 					case "0":
 						break;
 					default:
@@ -33,7 +53,9 @@ namespace Diena8
 				}
 
 			}
+			*/
 
+			Console.ReadLine();
 		}
 	}
 }
