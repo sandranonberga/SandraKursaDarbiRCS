@@ -66,7 +66,6 @@ namespace Diena7
 			int reizinajums = 0;
 			int i = 0;
 			
-
 			while (i <= 9)
 			{
 				reizinajums = i * 2 + reizinajums;
