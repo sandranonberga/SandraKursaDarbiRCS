@@ -37,16 +37,39 @@ namespace Diena9
 				{
 					Console.WriteLine("Galds ir tukshs!");
 				}
-				if(i == robeza-1)
+				if (i == robeza - 1)
 				{
 					Console.WriteLine("____________________");
 				}
 			}
-
-
-
-
 		}
+
+			public void Parbaude()
+			{
+				int a = 0;
+				for (int i = 0; i < 12; i++)
+				{
+
+					if (masivs[i] == "0")
+					{
+						a++;
+					}
+					if (a == 12)
+					{
+						Console.WriteLine("Visas vietas tuksas!");
+					}
+					else
+					{
+						Console.WriteLine("Nav visas tuksas!");
+					}
+				}
+
+
+			}
+
+	
+
+		
 
 	}
 }
