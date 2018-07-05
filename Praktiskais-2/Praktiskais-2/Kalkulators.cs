@@ -27,7 +27,7 @@ namespace Praktiskais_2
 			switch (input)
 			{
 				case "1":
-					Saskaitit(a,b);
+					Console.WriteLine(Saskaitit(a,b));
 					break;
 				case "2":
 					Atnemt(a, b);
@@ -44,7 +44,6 @@ namespace Praktiskais_2
 				default:
 					Console.WriteLine("Nepareiza ievade");
 					break;
-
 			}
 
 			Console.WriteLine();
