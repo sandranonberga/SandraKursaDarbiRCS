@@ -14,7 +14,8 @@ namespace Diena9
 		{
 			//12 vietas, Ar ConsoleReadLine - vai vieta ir brīva vai tukša. Tukšā - 0, pilnā - 1; 
 
-			
+			int robeza = masivs.Length;
+
 			Console.WriteLine("Ievadiet, vai solaa kaads seezh:");
 			string vards = "";
 
@@ -31,6 +32,14 @@ namespace Diena9
 				if (masivs[i] != "0")
 				{
 					Console.WriteLine("Pie galda sez " + masivs[i]);
+				}
+				else
+				{
+					Console.WriteLine("Galds ir tukshs!");
+				}
+				if(i == robeza-1)
+				{
+					Console.WriteLine("____________________");
 				}
 			}
 
