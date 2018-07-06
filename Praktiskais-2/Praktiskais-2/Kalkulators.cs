@@ -22,12 +22,13 @@ namespace Praktiskais_2
 			Console.WriteLine("1 - saskaitishana, 2 - atnemshana, 3 - reizinashana, 4 - dalishana");
 			string input = Console.ReadLine();
 
-			Console.WriteLine("Rezultats ir:");
+			
+			
 
 			switch (input)
 			{
 				case "1":
-					Console.WriteLine(Saskaitit(a,b));
+					Saskaitit(a,b);
 					break;
 				case "2":
 					Atnemt(a, b);
@@ -46,7 +47,8 @@ namespace Praktiskais_2
 					break;
 			}
 
-			Console.WriteLine();
+			Console.WriteLine("Rezultats ir:");
+
 		}
 
 
