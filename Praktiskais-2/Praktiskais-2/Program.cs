@@ -14,6 +14,8 @@ namespace Praktiskais_2
 			obj.funkcizv();
 
 
+
+
 			Console.ReadLine();
 
 		}
