@@ -15,6 +15,7 @@ namespace Diena10_GUI
 	{
 		private int skaitlis1 = 0;
 		private int skaitlis2 = 0;
+		private string darbiba = "";
 
 		public Form1()
 		{
